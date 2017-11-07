@@ -1,0 +1,2 @@
+2017-11-03 17:20:42.271 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"DSNgMR7Z7unF84IgR8UYNZWSClHz34For95Ug8wUKVaNpRiwA5bekyqOeh5niLeEUUCNOl0gZMhyG1Lax3rzEMU_aA6XZlo-yS2z2rUwAmIStkq14FtBsjndbxU2VV03DJXhABANTH","expires_in":7200}
+2017-11-03 17:20:42.454 [main] INFO  com.ray.weixin.gz.service.invoice.InvoiceService - jsonObject:{"errcode":0,"white_list_size":2,"errmsg":"ok","success_openid":["oDLefxDvQajibXhSWIWHrkiO1n2o"],"success_username":["shiray1994"]}

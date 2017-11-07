@@ -1,0 +1,4 @@
+2017-11-02 10:23:14.754 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"Cx0r7wXGOEzcoLU3Z7uqGH48mjSj18NhMZrPBeQYa7ThknPdmQZ8A-TnmdC6liNZRiABl6dW2tJ91uh_mrAChmtyq-G9eg2AIRe3nYicbyX25ag6eP7Rbo4onXy0fEFWQARbADAJTK","expires_in":7200}
+2017-11-02 10:23:14.894 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"errcode":0,"ticket":"kgt8ON7yVITDhtdwci0qed-m2nUygHpV3DXUL-ToMkgV9_zWqMZqZdRXGjvkndBE4ofj0pWkhjCrjCrzew8K1g","errmsg":"ok","expires_in":7200}
+2017-11-02 10:23:14.895 [main] INFO  com.ray.weixin.gz.test.AuthHelperTest - accessToken:Cx0r7wXGOEzcoLU3Z7uqGH48mjSj18NhMZrPBeQYa7ThknPdmQZ8A-TnmdC6liNZRiABl6dW2tJ91uh_mrAChmtyq-G9eg2AIRe3nYicbyX25ag6eP7Rbo4onXy0fEFWQARbADAJTK
+2017-11-02 10:23:14.895 [main] INFO  com.ray.weixin.gz.test.AuthHelperTest - jsapiTicket:kgt8ON7yVITDhtdwci0qed-m2nUygHpV3DXUL-ToMkgV9_zWqMZqZdRXGjvkndBE4ofj0pWkhjCrjCrzew8K1g

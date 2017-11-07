@@ -1,0 +1,2 @@
+2017-11-06 10:59:55.164 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"3ynjAlNbDHzQro2up2ktxCgkphTczbc7D-jOp7cCSU83r7XxaW485e8WMYJafgBlzdi7GWDtuElNG8NOtAP0xuMS_Z8OFf7EO946okIL7uEZu2AkPZpaZE2BCo-VZAJdCEXfAFAOQJ","expires_in":7200}
+2017-11-06 10:59:55.176 [main] INFO  com.ray.weixin.gz.service.invoice.InvoiceService - data:{"encrypt_code":"XXIzTtMqCxwOaawoE91+VJdsFmv7b8g0VZIZkqf4GWA60Fzpc8ksZ/5ZZ0DVkXdE"}

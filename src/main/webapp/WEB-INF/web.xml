@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>weixin_gz</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!--微信公众号回调-->
+	<servlet>
+		<servlet-name>weixin</servlet-name>
+		<servlet-class>com.ray.weixin.gz.controller.WeiXinServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>weixin</servlet-name>
+		<url-pattern>/weixin</url-pattern>
+	</servlet-mapping>
+	<!-- 微信公众号回调-->
+
+  
+  <servlet>
+    <description></description>
+    <display-name>uploadimg</display-name>
+    <servlet-name>uploadimg</servlet-name>
+    <servlet-class>com.ray.weixin.gz.controller.UploadImgServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>uploadimg</servlet-name>
+    <url-pattern>/uploadimg</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>

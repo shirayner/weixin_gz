@@ -1,0 +1,2 @@
+2017-11-03 18:05:53.970 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"67QD2E-yhL3TBzNgBpOz2HV3_w_0bLKLDPFS07xEsAOJkdtSCUBbguntV9idhjt9vrXIeAmQpv6AU18O7yKrQtGJF2JNWaLSuQLiipkKIoESbcOqxu83-tJzpvLLDDYCYZNeAEADES","expires_in":7200}
+2017-11-03 18:05:54.239 [main] INFO  com.ray.weixin.gz.service.invoice.InvoiceService - jsonObject:{"errcode":0,"errmsg":"ok","invoice_url":"https://mp.weixin.qq.com/bizmall/authinvoice?action=list&s_pappid=d3hhMDA2NGVhNjU3ZjgwMDYyX0s22HY1myAuWWro7q-FsX8KWzrWiEgI8Ngqa3-W6dQ4"}

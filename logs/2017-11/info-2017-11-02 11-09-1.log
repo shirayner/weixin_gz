@@ -1,0 +1,9 @@
+2017-11-02 11:09:02.323 [http-apr-8080-exec-24] INFO  com.ray.weixin.gz.controller.WeiXinServlet - post--------------
+2017-11-02 11:09:02.413 [http-apr-8080-exec-24] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - parms:{"signature":["d539c8bb74d1b5da2dbc62a795373158e0a3b750"],"timestamp":["1509592137"],"nonce":["1422100717"],"openid":["oDLefxDvQajibXhSWIWHrkiO1n2o"]}
+2017-11-02 11:09:02.413 [http-apr-8080-exec-24] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - postData:<xml><ToUserName><![CDATA[gh_8c1dd328db4e]]></ToUserName><FromUserName><![CDATA[oDLefxDvQajibXhSWIWHrkiO1n2o]]></FromUserName><CreateTime>1509592137</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[…]]></Content><MsgId>6483648859305252196</MsgId></xml>
+2017-11-02 11:09:02.415 [http-apr-8080-exec-24] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - 明文模式
+2017-11-02 11:09:02.415 [http-apr-8080-exec-24] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - <xml><ToUserName><![CDATA[gh_8c1dd328db4e]]></ToUserName><FromUserName><![CDATA[oDLefxDvQajibXhSWIWHrkiO1n2o]]></FromUserName><CreateTime>1509592137</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[…]]></Content><MsgId>6483648859305252196</MsgId></xml>
+2017-11-02 11:09:02.719 [http-apr-8080-exec-24] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - fromUserName:oDLefxDvQajibXhSWIWHrkiO1n2o
+2017-11-02 11:09:02.720 [http-apr-8080-exec-24] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - toUserName:gh_8c1dd328db4e
+2017-11-02 11:09:02.720 [http-apr-8080-exec-24] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - msgType:text
+2017-11-02 11:09:02.720 [http-apr-8080-exec-24] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - Event:null  eventKey:null

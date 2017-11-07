@@ -1,0 +1,4 @@
+2017-11-02 11:03:12.518 [http-apr-8080-exec-1] INFO  com.ray.weixin.gz.controller.WeiXinServlet - get--------------
+2017-11-02 11:03:22.892 [http-apr-8080-exec-13] INFO  com.ray.weixin.gz.controller.WeiXinServlet - get--------------
+2017-11-02 11:03:25.562 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.controller.WeiXinServlet - get--------------
+2017-11-02 11:03:35.545 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.controller.WeiXinServlet - get--------------

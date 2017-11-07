@@ -1,0 +1,4 @@
+2017-11-06 10:15:59.609 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"SsSaL0UvlE4-OZxK49sD1GpDM4AexdoagPa_-aLp_NX-dcROO-RNgWpxXY4uJFumGqJoTpAwjmwEMVetav_ncw0OwJXntpTtprBHp_a6jYjVymm3jFw2Y3vtsCkoi90NAWZhAEAFBE","expires_in":7200}
+2017-11-06 10:15:59.747 [main] INFO  com.ray.weixin.gz.service.invoice.InvoiceService - jsonObject:{"errcode":0,"errmsg":"ok","invoice_url":"https://mp.weixin.qq.com/bizmall/authinvoice?action=list&s_pappid=d3hhMDA2NGVhNjU3ZjgwMDYyX0s22HY1myAuWWro7q-FsX8KWzrWiEgI8Ngqa3-W6dQ4"}
+2017-11-06 10:15:59.748 [main] INFO  com.ray.weixin.gz.service.invoice.InvoiceService - s_pappid:d3hhMDA2NGVhNjU3ZjgwMDYyX0s22HY1myAuWWro7q-FsX8KWzrWiEgI8Ngqa3-W6dQ4
+2017-11-06 10:15:59.748 [main] INFO  com.ray.weixin.gz.service.invoice.InvoiceServiceTest - s_pappid:d3hhMDA2NGVhNjU3ZjgwMDYyX0s22HY1myAuWWro7q-FsX8KWzrWiEgI8Ngqa3-W6dQ4

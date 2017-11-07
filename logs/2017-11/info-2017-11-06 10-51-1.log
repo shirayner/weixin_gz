@@ -1,0 +1,5 @@
+2017-11-06 10:51:25.254 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"Jye_YnDfa8FPPaBi4R36SMZcm4wmE5Dev6Y4fvU9eR4_DtbyCQbdRVhaBFuwmqzvozz14Ktsv1k0n3fOtilXTnqc7lH-jy1IWmG7ghmenBS9srR8W39dGwaNx-_j8deJAOQbABAHVX","expires_in":7200}
+2017-11-06 10:51:25.312 [main] INFO  com.ray.weixin.gz.service.invoice.InvoiceService - data:{"invoice_info":{"payee":"测试-收款方","base_info":{"logo_url":"http://mmbiz.qpic.cn/mmbiz_png/2LubW5xIOiaLU0yl6F1icsdAWRs71OWlZTicFE3KickMJwAUU9lCqNgia6tnjFAvqmLy8BaOHud8xqicLVL4FdrqmgGQ/0","title":"上海百度公司"},"type":"广东省增值税普通发票"}}
+2017-11-06 10:51:25.776 [main] INFO  com.ray.weixin.gz.service.invoice.InvoiceService - jsonObject:{"errcode":0,"errmsg":"ok","card_id":"pDLefxFQ1t7obyr0d16WQ6DMnbto"}
+2017-11-06 10:51:25.779 [main] INFO  com.ray.weixin.gz.service.invoice.InvoiceService - cardId:pDLefxFQ1t7obyr0d16WQ6DMnbto
+2017-11-06 10:51:25.779 [main] INFO  com.ray.weixin.gz.service.invoice.InvoiceServiceTest - cardId:pDLefxFQ1t7obyr0d16WQ6DMnbto

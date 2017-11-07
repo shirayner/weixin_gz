@@ -1,0 +1,2 @@
+2017-11-06 10:31:24.297 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"VrYseZyGOIdDOeQ9wCSynk92kv4rhD6wcQsY0jKGyBaEbdFpiMH2ATB5-7uGCT7bDArQSClb6Nmczxh67bPGPOT_2ZMKNys9rq5krYtlwgNq9xx86O3kMsO22BFJmjSoELHjAGAKRN","expires_in":7200}
+2017-11-06 10:31:24.332 [main] INFO  com.ray.weixin.gz.service.invoice.InvoiceService - data:{"payee":"测试-收款方","base_info":{"logo_url":"http://mmbiz.qpic.cn/mmbiz_png/2LubW5xIOiaLU0yl6F1icsdAWRs71OWlZTicFE3KickMJwAUU9lCqNgia6tnjFAvqmLy8BaOHud8xqicLVL4FdrqmgGQ/0","title":"上海百度公司"},"type":"广东省增值税普通发票"}

@@ -1,0 +1,2 @@
+2017-11-06 10:09:42.472 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"SsSaL0UvlE4-OZxK49sD1EerVHqc23Wr-_zVx-tPyXXoPfEdVEXN287OkLVGi-1kqJGyuZLG5PIpSv3Btm6Zz6koecTHL7xZNnUTxSpGuFOYVKGjPjGS7sIqR42u5-C2AUKdAEADXN","expires_in":7200}
+2017-11-06 10:09:42.520 [main] INFO  com.ray.weixin.gz.service.invoice.InvoiceService - data:{"payee":"测试-收款方","base_info":{"logo_url":"http://mmbiz.qpic.cn/mmbiz/iaL1LJM1mF9aRKPZJkmG8xXhiaHqkKSVMMWeN3hLut7X7hicFNjakmxibMLGWpXrEXB33367o7zHN0CwngnQY7zb7g/0","description":"description","title":"xx公司"},"type":"广东省增值税普通发票"}

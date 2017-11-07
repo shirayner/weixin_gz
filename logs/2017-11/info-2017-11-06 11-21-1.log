@@ -1,0 +1,3 @@
+2017-11-06 11:21:44.488 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"r2TY1YY5J8jryKRC94qk_-pJBfEl9zPAIYm1nr_QeYNQf9Kqhj2agGrAUt5LD5YhVwwu8a0p0E0WSbq0sGETrRsi0c3q8j7OmaEkOJ2sofSLhmaIVscVbLJ5NbBKFyYHDVGaAJAYQB","expires_in":7200}
+2017-11-06 11:21:44.646 [main] INFO  com.ray.weixin.gz.service.invoice.InvoiceService - jsonObject:{"errcode":0,"ticket":"IpK_1T69hDhZkLQTlwsAX5ZwNp_4txyINLb67lXqTZJJTe-sJC3W9yUJ9nfDca9lpZXqZnxX4fnpI3xIwxH-TA","errmsg":"ok","expires_in":7200}
+2017-11-06 11:21:44.647 [main] INFO  com.ray.weixin.gz.service.invoice.InvoiceServiceTest - ticket:IpK_1T69hDhZkLQTlwsAX5ZwNp_4txyINLb67lXqTZJJTe-sJC3W9yUJ9nfDca9lpZXqZnxX4fnpI3xIwxH-TA
