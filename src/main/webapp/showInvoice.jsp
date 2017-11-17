@@ -10,11 +10,14 @@
 	src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
 
 <script type="text/javascript">
-alert(window.location.href);
 
 	var _config =
 <%=com.ray.weixin.gz.util.AuthHelper.getJsapiConfig(request)%>
 	;
+	var invoice_config =
+		<%=com.ray.weixin.gz.util.AuthHelper.getInvoiceConfig()%>
+			;
+	
 </script>
 
 <script type="text/javascript" src="js/auth.js"></script>
@@ -34,6 +37,11 @@ alert(window.location.href);
 	</div>
 
 	<div align="center">
+		<span class="desc">checkJsApi</span>
+		<button class="btn btn_primary" id="checkJsApi">checkJsApi</button>
+	</div>
+	
+	<div align="center">
 		<span class="desc">上传图片按钮</span>
 		<button class="btn btn_primary" id="uploadImg">上传图片</button>
 	</div>
@@ -48,10 +56,13 @@ alert(window.location.href);
 		<button class="btn btn_primary" id="qrcode">扫码</button>
 	</div>
 
+	
 	<div align="center">
 		<span class="desc">拉起发票列表</span>
 		<button class="btn btn_primary" id="showInvoice">拉起发票列表</button>
 	</div>
+	
+
 
 </body>
 </html>

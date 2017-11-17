@@ -13,7 +13,7 @@ import org.apache.logging.log4j.Logger;
 import com.qq.weixin.mp.aes.AesException;
 import com.qq.weixin.mp.aes.WXBizMsgCrypt;
 import com.ray.weixin.gz.config.Env;
-import com.ray.weixin.gz.service.message.ReplyMessageService;
+import com.ray.weixin.gz.service.message.reply.ReplyMessageService;
 
 
 

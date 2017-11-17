@@ -1,11 +1,11 @@
 package com.ray.weixin.gz.model.menu;  
   
-/** 
- * 菜单 
- *  
- * @author liufeng 
- * @date 2013-08-08 
- */  
+/**
+ * @desc  : 菜单 
+ * 
+ * @author: shirayner
+ * @date  : 2017年11月13日 上午11:37:31
+ */
 public class Menu {  
     private Button[] button;  
   

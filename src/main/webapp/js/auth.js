@@ -1,6 +1,7 @@
 //1.jsapi签名校验
 wx.config({
-	debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+	beta: true,// 必须这么写，否则在微信插件有些jsapi会有问题
+	debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
 	appId: _config.appId, // 必填，公众号的唯一标识
 	timestamp: _config.timeStamp, // 必填，生成签名的时间戳
 	nonceStr: _config.nonceStr, // 必填，生成签名的随机串
@@ -31,6 +32,30 @@ wx.ready(function(){
 		alert("ceshiaaa");
 
 	});
+
+	$("#checkJsApi").click(function(){
+		wx.checkJsApi({
+			jsApiList: [ 'checkJsApi', 'onMenuShareAppMessage',
+				'onMenuShareWechat', 'startRecord', 'stopRecord',
+				'onVoiceRecordEnd', 'playVoice', 'pauseVoice', 'stopVoice',
+				'uploadVoice', 'downloadVoice', 'chooseImage',
+				'previewImage', 'uploadImage', 'downloadImage',
+				'getNetworkType', 'openLocation', 'getLocation',
+				'hideOptionMenu', 'showOptionMenu', 'hideMenuItems',
+				'showMenuItems', 'hideAllNonBaseMenuItem',
+				'showAllNonBaseMenuItem', 'closeWindow', 'scanQRCode',
+				'previewFile', 'openEnterpriseChat',
+				'selectEnterpriseContact','chooseInvoice'
+
+				], // 需要检测的JS接口列表，所有JS接口列表见附录2,
+				success: function(res) {
+					// 以键值对的形式返回，可用的api值true，不可用为false
+					// 如：{"checkResult":{"chooseImage":true},"errMsg":"checkJsApi:ok"}
+				}
+		});
+
+	});
+
 
 
 	//2.2 上传图片
@@ -114,27 +139,57 @@ wx.ready(function(){
 
 	});
 
-
 	//2.4 拉起发票列表
+	//注意，调用此接口时，config接口必须传入beta参数。
 	$("#showInvoice").click(function(){
+		alert("bb");
 		wx.invoke('chooseInvoice', {
-			'timestamp': 1489030247, //卡券签名时间戳
-			'nonceStr': "p(6N&7WOAF", //卡券签名随机串
-			'signType': 'SHA1', //签名方式，默认'SHA1'
-			'cardSign': "a72043eed36c74300000000000000000" //卡券签名
+			'timestamp': invoice_config.timestamp, // 卡券签名时间戳 
+			'nonceStr' : invoice_config.nonceStr, // 卡券签名随机串 
+			'signType' : invoice_config.signType, // 签名方式，默认'SHA1' 
+			'cardSign' : invoice_config.cardSign, // 卡券签名 
 		}, function(res) {
-			alert(JSON.stringify(res));
 
+			//1.去除无用信息，只保留card_id、encrypt_code
+			var invoiceList=res.choose_invoice_info;
+			var invoiceListStr=JSON.stringify(invoiceList);
+			alert("invoiceList:"+invoiceListStr);
+
+			//2.通过card_id 和 encrypt_code 查询发票信息
+			$.ajax({  
+				type : "POST",
+				url  : "http://rayner.nat300.top/weixin_gz/invoiceServlet",
+				data : {
+					invoiceListStr : invoiceListStr,
+				},
+				success : function(data) {
+					alert("拉取发票返回成功");
+					alert(data);
+
+
+
+				},
+				error : function(data) {  
+					alert("error:"+JSON.stringify(data));  
+				},
+				ajaxComplete :function(e){
+					alert(e);
+				},
+				ajaxSuccess:function(e){
+					alert(e);
+				},
+				ajaxStop:function(e){
+					alert(e);
+				}
+			});  
 		});
 
 	});
 
 
 
-
-
-
 });
+
 
 
 //2.jsapi签名校验失败后执行error
@@ -142,7 +197,5 @@ wx.error(function(err){
 	alert('wx error: ' + JSON.stringify(err));  
 	// config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新签名。
 });
-
-
 
 

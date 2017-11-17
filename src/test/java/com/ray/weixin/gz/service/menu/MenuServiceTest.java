@@ -34,7 +34,7 @@ public class MenuServiceTest {
 	public void testCreateMenu() throws Exception {
 		//1.准备好请求参数
 		String accessToken=AuthHelper.getAccessToken(Env.APP_ID, Env.APP_SECRET);
-		Menu menu=getMenu();
+		Menu menu=getMenu_hec();
 		
 		//2.调用接口，执行请求
 		MenuService.createMenu(menu, accessToken);
@@ -93,7 +93,7 @@ public class MenuServiceTest {
 		ViewButton btn13 = new ViewButton();  
 		btn13.setName("申请开票");  
 		btn13.setType("view");  
-		btn13.setUrl("https://mp.weixin.qq.com/bizmall/authinvoice?action=list&s_pappid=d3hhMDA2NGVhNjU3ZjgwMDYyX0s22HY1myAuWWro7q-FsX8KWzrWiEgI8Ngqa3-W6dQ4&appid=wxa0064ea657f80062&num=1&o1=1234&m1=11&t1=1509942717&source=web&type=1&redirect_url=https%3A%2F%2Fmp.weixin.qq.com&signature=3940aae89b04a0fd05f8f231b74821939f0d18df#wechat_redirect");  
+		btn13.setUrl("https://mp.weixin.qq.com/bizmall/authinvoice?action=list&s_pappid=d3hhMDA2NGVhNjU3ZjgwMDYyX0s22HY1myAuWWro7q-FsX8KWzrWiEgI8Ngqa3-W6dQ4&appid=wxa0064ea657f80062&num=1&o1=1234&m1=11&t1=1510036149&source=web&type=1&redirect_url=https%3A%2F%2Fmp.weixin.qq.com&signature=9aa88c3a4587f51397703a7838cd2fcaa60abb38#wechat_redirect");  
 
 
 		ViewButton btn14 = new ViewButton();  
@@ -180,4 +180,24 @@ public class MenuServiceTest {
 
 		return menu;  
 	}  
+	
+	private static Menu getMenu_hec() {  
+		
+		ViewButton btn11 = new ViewButton();  
+		btn11.setName("获取发票信息");  
+		btn11.setType("view");  
+		btn11.setUrl("http://rayner.nat300.top/weixin_gz/weixingz_show_invoiceInfo.screen");  
+
+		
+		
+		Menu menu = new Menu();  
+		menu.setButton(new Button[] { btn11 });  
+
+		return menu;  
+
+	}
+	
+	
+	
+	
 }

@@ -1,11 +1,11 @@
 package com.ray.weixin.gz.model.menu;  
   
-/** 
- * view类型的菜单 
- *  
- * @author liuyq 
- * @date 2013-04-10 
- */  
+/**
+ *  @desc  : view类型的按钮
+ * 
+ * @author: shirayner
+ * @date  : 2017年11月13日 上午11:37:42
+ */
 public class ViewButton extends Button {  
     private String type;  
     private String url;  

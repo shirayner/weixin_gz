@@ -1,11 +1,11 @@
 package com.ray.weixin.gz.model.message.request;  
-  
-/** 
- * 图片消息 
- *  
- * @author liufeng 
- * @date 2013-05-19 
- */  
+   
+/**
+ * @desc  : 图片消息 
+ * 
+ * @author: shirayner
+ * @date  : 2017年11月13日 上午11:04:33
+ */
 public class ImageMessage extends BaseMessage {  
     // 图片链接  
     private String PicUrl;  

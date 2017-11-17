@@ -1,13 +1,13 @@
 package com.ray.weixin.gz.model.message.response;  
   
 import java.util.List;  
-  
-/** 
- * 文本消息 
- *  
- * @author liufeng 
- * @date 2013-05-19 
- */  
+   
+/**
+ * @desc  : 图文消息
+ * 
+ * @author: shirayner
+ * @date  : 2017年11月13日 上午11:13:36
+ */
 public class NewsMessage extends BaseMessage {  
     // 图文消息个数，限制为10条以内  
     private int ArticleCount;  

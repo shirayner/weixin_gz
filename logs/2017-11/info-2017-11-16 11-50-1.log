@@ -1,0 +1,4 @@
+2017-11-16 11:50:09.914 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"mw6xpHyvnvQggkoR0UgYB1F4hi8pjrd3LKTNgU9YRdU-uGjtxUYILsWLo2ODYITHYC7bZ3Yw2AIr9aDwKCmZG2LbhwkrJGbmUVvU9XAbpRFpTCq4QfiseqlfWm90M0jMMIXdAFADZO","expires_in":7200}
+2017-11-16 11:50:09.957 [main] INFO  com.ray.weixin.gz.service.menu.MenuService - {"button":[{"name":"获取发票信息","type":"view","url":"http://rayner.nat300.top/weixin_gz/showInvoice.jsp"}]}
+2017-11-16 11:50:10.419 [main] INFO  com.ray.weixin.gz.service.menu.MenuService - jsonObject:{"errcode":0,"errmsg":"ok"}
+2017-11-16 11:50:10.420 [main] INFO  com.ray.weixin.gz.service.menu.MenuService - 菜单创建成功！

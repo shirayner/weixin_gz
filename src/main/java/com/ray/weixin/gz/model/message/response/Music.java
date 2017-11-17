@@ -1,11 +1,11 @@
 package com.ray.weixin.gz.model.message.response;  
-  
-/** 
- * 音乐model 
- *  
- * @author liufeng 
- * @date 2013-05-19 
- */  
+   
+/**
+ * @desc  : 音乐model 
+ * 
+ * @author: shirayner
+ * @date  : 2017年11月13日 上午11:12:47
+ */
 public class Music {  
     // 音乐名称  
     private String Title;  

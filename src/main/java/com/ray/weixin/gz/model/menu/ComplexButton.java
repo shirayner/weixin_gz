@@ -1,11 +1,11 @@
 package com.ray.weixin.gz.model.menu;  
-  
-/** 
- * 复杂按钮（父按钮） 
- *  
- * @author liufeng 
- * @date 2013-08-08 
- */  
+   
+/**
+ * @desc  :  复杂按钮（父按钮） 
+ * 
+ * @author: shirayner
+ * @date  : 2017年11月13日 上午11:36:42
+ */
 public class ComplexButton extends Button {  
     private Button[] sub_button;  
   

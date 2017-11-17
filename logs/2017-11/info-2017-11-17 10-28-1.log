@@ -1,0 +1,2 @@
+2017-11-17 10:28:11.644 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"8TXCvdMbpGv8Sko53rHJuuZpv8vpg7jJrlHYShy8SYUmZsL6s1dZtx2p11FvCJpLCzQ1Mc-m8t4jmNEQmwur_HMLMb6VNMIaFnXbfzacMO4OHLbAEARKO","expires_in":7200}
+2017-11-17 10:28:11.800 [main] INFO  com.ray.weixin.gz.service.custom.CustomService - jsonObject:{"kf_online_list":[]}

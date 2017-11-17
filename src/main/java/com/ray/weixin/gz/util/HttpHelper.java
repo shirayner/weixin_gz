@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+import org.apache.http.Consts;
 import org.apache.http.Header;
 import org.apache.http.HeaderElement;
 import org.apache.http.HttpEntity;
@@ -23,6 +24,7 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.protocol.BasicHttpContext;
 import org.apache.http.util.EntityUtils;
+
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 
@@ -44,7 +46,7 @@ public class HttpHelper {
 		//1.生成一个请求
 		HttpGet httpGet = new HttpGet(url);
 		//2.配置请求的属性
-		RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(5000).setConnectTimeout(5000).build();//2000
+		RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(10000).setConnectTimeout(10000).build();//2000
 		httpGet.setConfig(requestConfig);
 
 		//3.发起请求，获取响应信息	
@@ -115,7 +117,7 @@ public class HttpHelper {
 		httpPost.setConfig(requestConfig);
 		//2.2 设置数据传输格式-json
 		httpPost.addHeader("Content-Type", "application/json");
-		//2.3 设置请求参数
+		//2.3 设置请求实体，封装了请求参数
 		StringEntity requestEntity = new StringEntity(JSON.toJSONString(data), "utf-8");
 		httpPost.setEntity(requestEntity);
 
@@ -187,9 +189,85 @@ public class HttpHelper {
 		CloseableHttpClient httpClient = HttpClients.createDefault();
 		RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(5000).setConnectTimeout(5000).build();
 		httpPost.setConfig(requestConfig);
-
+		
+		//2.3 设置请求实体，封装了请求参数
 		HttpEntity requestEntity = MultipartEntityBuilder.create().addPart("media",
-				new FileBody(file, ContentType.APPLICATION_OCTET_STREAM, file.getName())).build();
+				new FileBody(file, ContentType.create("multipart/form-data", Consts.UTF_8), file.getName())).build();
+
+		//FileEntity requestEntity = new FileEntity(file,ContentType.MULTIPART_FORM_DATA);
+
+
+		httpPost.setEntity(requestEntity);
+
+		try {
+			response = httpClient.execute(httpPost, new BasicHttpContext());
+
+			if (response.getStatusLine().getStatusCode() != 200) {
+
+				System.out.println("request url failed, http code=" + response.getStatusLine().getStatusCode()
+						+ ", url=" + url);
+				return null;
+			}
+			HttpEntity entity = response.getEntity();
+			if (entity != null) {
+				String resultStr = EntityUtils.toString(entity, "utf-8");
+
+				JSONObject result = JSON.parseObject(resultStr);
+				
+				//上传临时素材失败
+				if (result.getInteger("errcode") != null && 0 != result.getInteger("errcode") ) {
+					System.out.println("request url=" + url + ",return value=");
+					System.out.println(resultStr);
+					int errCode = result.getInteger("errcode");
+					String errMsg = result.getString("errmsg");
+					throw new Exception("error code:"+errCode+", error message:"+errMsg); 
+				
+					//上传临时素材成功
+				}else {
+					//result.remove("errcode");
+					//result.remove("errmsg");
+					return result;
+				}
+
+			}
+		} catch (IOException e) {
+			System.out.println("request url=" + url + ", exception, msg=" + e.getMessage());
+			e.printStackTrace();
+		} finally {
+			if (response != null) try {
+				response.close();                  //释放资源
+
+
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+
+		return null;
+	}
+
+	/**
+	 * @desc ： 上传PDF
+	 * 见微信电子发票章节
+	 * 9. 向用户提供发票或其它消费凭证PDF
+	 *  
+	 * @param url
+	 * @param file
+	 * @return
+	 * @throws Exception 
+	 *   JSONObject
+	 */
+	public static JSONObject uploadPDF(String url, File file) throws Exception {
+		HttpPost httpPost = new HttpPost(url);
+		CloseableHttpResponse response = null;
+		CloseableHttpClient httpClient = HttpClients.createDefault();
+		RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(5000).setConnectTimeout(5000).build();
+		httpPost.setConfig(requestConfig);
+		
+		//2.3 设置请求实体，封装了请求参数
+		HttpEntity requestEntity = MultipartEntityBuilder.create().addPart("media",
+				new FileBody(file, ContentType.create("multipart/form-data", Consts.UTF_8), file.getName())).build();
+
 		httpPost.setEntity(requestEntity);
 
 		try {
@@ -235,7 +313,6 @@ public class HttpHelper {
 
 		return null;
 	}
-
 	/**
 	 * @desc ： 4.下载文件 -get
 	 *  

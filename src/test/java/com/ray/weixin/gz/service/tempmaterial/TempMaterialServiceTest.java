@@ -42,7 +42,7 @@ public class TempMaterialServiceTest {
 	public void testGetTempMaterial() throws Exception {
 		String  accessToken=AuthHelper.getAccessToken(Env.APP_ID, Env.APP_SECRET);
 		// String  mediaId="5BXY7DI-uz3N-m8HuZP3Lqzy-WrtegzUKW04OcLNlUjMBcyEyCdgorBsotQqpH0r"; // D:/img/1.jpg
-		String  mediaId="bdARqt5NClDYbP_og5NwBRwO4sCIIwF1ZeVQQKTvB1bkn2rL9Yq52Y6S656lTxf1"; // D:/img/2.png
+		String  mediaId="4nPOsc2NL2e5MfRB3ePannbbuRrz0ZKi3udO4sP-6Nf7-SFJXM6D4sOyf1d_Khic"; // D:/img/2.png
 		String  fileDir="D:/img/download/";  
 
 		TempMaterialService.getTempMaterial(accessToken, mediaId, fileDir);

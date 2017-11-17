@@ -1,11 +1,11 @@
 package com.ray.weixin.gz.model.message.response;  
-  
-/** 
- * 消息基类（公众帐号 -> 普通用户） 
- *  
- * @author liufeng 
- * @date 2013-05-19 
- */  
+
+/**
+ * @desc  : 消息基类（公众帐号 -> 普通用户） 
+ * 
+ * @author: shirayner
+ * @date  : 2017年11月13日 上午11:10:32
+ */
 public class BaseMessage {  
     // 接收方帐号（收到的OpenID）  
     private String ToUserName;  

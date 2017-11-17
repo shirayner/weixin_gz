@@ -1,0 +1,4 @@
+2017-11-07 17:24:29.115 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"2LO3TECv5btq5HNGxa46Uzm327o9ZFyfrc5hloBrHi6BkZbrQm0Pb6vJdhd2uWbeuzqElLTX3_5QT22sN1Gqk_VR-dk41RcJ9bPn40bGcT8VNUdAFAEWD","expires_in":7200}
+2017-11-07 17:24:30.438 [main] INFO  com.ray.weixin.gz.service.tempmaterial.TempMaterialService - JsonObject:{"media_id":"VhTihTQPSJnDUiU3FYSTVxj19mUBBEnHZzjkK-T7m4NLTeUU3trESYerUKUvAVzw","created_at":1510046670,"type":"image"}
+2017-11-07 17:24:30.439 [main] INFO  com.ray.weixin.gz.service.tempmaterial.TempMaterialService - 上传image临时素材成功:VhTihTQPSJnDUiU3FYSTVxj19mUBBEnHZzjkK-T7m4NLTeUU3trESYerUKUvAVzw
+2017-11-07 17:24:52.225 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"fWYuVJfMHMs_li62Hyl6o7sT2CgOQVMPybU1niAV6hV5H7Dp9iUNdS4QJ1fDoLXpX6E63imIJehKuRjCWisAE2GliD7zQILTdu5p3q6izFoqZatTGz90d41xV7YQOse8JKAeAFAVWM","expires_in":7200}

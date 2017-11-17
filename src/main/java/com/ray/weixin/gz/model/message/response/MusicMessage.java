@@ -1,11 +1,11 @@
 package com.ray.weixin.gz.model.message.response;  
-  
-/** 
- * 音乐消息 
- *  
- * @author liufeng 
- * @date 2013-05-19 
- */  
+   
+/**
+ * @desc  : 音乐消息 
+ * 
+ * @author: shirayner
+ * @date  : 2017年11月13日 上午11:12:06
+ */
 public class MusicMessage extends BaseMessage {  
     // 音乐  
     private Music Music;  

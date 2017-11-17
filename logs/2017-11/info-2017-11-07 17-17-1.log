@@ -1,0 +1,3 @@
+2017-11-07 17:17:42.052 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"aiHszA8tOHriLSy-CmRnMBXhR_GvMArcmZNbK0B2fLppH75sJEswqP6FRXsCUN-P4SG6-IUyjn_5VaLEFnvFfwdhpnrpp_LOpP2sF5NAHDgBDKfAAAIKR","expires_in":7200}
+2017-11-07 17:17:43.257 [main] INFO  com.ray.weixin.gz.service.tempmaterial.TempMaterialService - JsonObject:{"media_id":"i7LrneHjiQkKiDfUuTCUVvnAFAZo3otdkCvQ8C9kfD_p_zG0DkipMlVlJ-jKrcP7","created_at":1510046263,"type":"image"}
+2017-11-07 17:17:43.258 [main] INFO  com.ray.weixin.gz.service.tempmaterial.TempMaterialService - 上传image临时素材成功:i7LrneHjiQkKiDfUuTCUVvnAFAZo3otdkCvQ8C9kfD_p_zG0DkipMlVlJ-jKrcP7

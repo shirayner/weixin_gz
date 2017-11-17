@@ -1,11 +1,11 @@
 package com.ray.weixin.gz.model.menu;  
   
-/** 
- * 普通按钮（子按钮） 
- *  
- * @author liufeng 
- * @date 2013-08-08 
- */  
+/**
+ *  @desc  : 普通按钮（子按钮） 
+ * 
+ * @author: shirayner
+ * @date  : 2017年11月13日 上午11:37:18
+ */
 public class CommonButton extends Button {  
     private String type;  
     private String key;  

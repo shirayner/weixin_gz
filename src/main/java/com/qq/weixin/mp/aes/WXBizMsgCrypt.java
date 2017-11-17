@@ -313,32 +313,5 @@ public class WXBizMsgCrypt {
 		return result;
 	}
 
-	
-	/**
-	 * @desc ：微信公众号  验证url
-	 *  
-	 * @param msgSignature  签名串，对应URL参数的msg_signature
-	 * @param token 公众平台上，开发者设置的token
-	 * @param timeStamp   时间戳，对应URL参数的timestamp
-	 * @param nonce 随机数，对应URL参数的nonce
-	 * @param echoStr 随机串，对应URL参数的echostr，在微信公众号中是明文的，直接原样返回给微信公众平台官方服务器
-	 * @return
-	 *    String  验证成功后，原样返回echoStr
-	 * @throws AesException   执行失败，请查看该异常的错误码和具体的错误信息
-	 */
-	public String verifyUrl_WXGZ(String msgSignature, String timeStamp, String nonce,String echoStr) throws AesException {
-		//1.进行SHA1加密
-		String signature = SHA1.getSHA1_WXGZ(this.token, timeStamp, nonce);
-
-		//2.验证 token、timestamp、nonce进行SHA1加密生成的signature 是否与url传过来msgSignature相同
-		if (!signature.equals(msgSignature)) {
-			throw new AesException(AesException.ValidateSignatureError);
-
-		}
-		//3.若不抛异常，则url验证成功，原样返回echoStr
-		String result = echoStr;
-		return result;
-	}
-
 
 }

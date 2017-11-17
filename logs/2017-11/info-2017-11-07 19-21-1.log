@@ -1,0 +1,24 @@
+2017-11-07 19:20:55.652 [http-apr-8080-exec-7] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - fromUserName:oDLefxDvQajibXhSWIWHrkiO1n2o
+2017-11-07 19:20:55.664 [http-apr-8080-exec-7] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - toUserName:gh_8c1dd328db4e
+2017-11-07 19:20:55.665 [http-apr-8080-exec-7] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - msgType:event
+2017-11-07 19:20:55.665 [http-apr-8080-exec-7] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - Event:VIEW  eventKey:http://rayner.nat300.top/weixin_gz/showInvoice.jsp
+2017-11-07 19:20:56.457 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"UGsYTDrMBme1gFMYxkpvxpIvfr6OpJbwW1mKP-cVzkp-INHiBSJYuX6ds77ehOnZn2vAXYu_kL5h6qmYzpN4IUkb11S72D3zi06JywLbtdd5pCZ6zR4sFgM8iepUxPztEFNjAGASTB","expires_in":7200}
+2017-11-07 19:20:56.575 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"errcode":0,"ticket":"kgt8ON7yVITDhtdwci0qed-m2nUygHpV3DXUL-ToMkhPApxtfh2gKdIeor3imcxVFP-2XAPiOcq_JwoPklYpgg","errmsg":"ok","expires_in":7200}
+2017-11-07 19:20:56.575 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.util.AuthHelper - accessToken:UGsYTDrMBme1gFMYxkpvxpIvfr6OpJbwW1mKP-cVzkp-INHiBSJYuX6ds77ehOnZn2vAXYu_kL5h6qmYzpN4IUkb11S72D3zi06JywLbtdd5pCZ6zR4sFgM8iepUxPztEFNjAGASTB
+2017-11-07 19:20:56.576 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.util.AuthHelper - ticket:kgt8ON7yVITDhtdwci0qed-m2nUygHpV3DXUL-ToMkhPApxtfh2gKdIeor3imcxVFP-2XAPiOcq_JwoPklYpgg
+2017-11-07 19:20:56.576 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.util.AuthHelper - nonceStr:d6de461a-bd59-4f3f-806d-5ee6fc965988
+2017-11-07 19:20:56.576 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.util.AuthHelper - timeStamp:1510053655
+2017-11-07 19:20:56.576 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.util.AuthHelper - signedUrl:http://rayner.nat300.top/weixin_gz/showInvoice.jsp
+2017-11-07 19:20:56.576 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.util.AuthHelper - signature:f5753ca06ed64343df188fdd5e31011d276ae93a
+2017-11-07 19:20:56.577 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.util.AuthHelper - appId:wxa0064ea657f80062
+2017-11-07 19:20:56.577 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.util.AuthHelper - configValue:{signature:'f5753ca06ed64343df188fdd5e31011d276ae93a',nonceStr:'d6de461a-bd59-4f3f-806d-5ee6fc965988',timeStamp:'1510053655',appId:'wxa0064ea657f80062'}
+2017-11-07 19:20:56.694 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"UGsYTDrMBme1gFMYxkpvxpIvfr6OpJbwW1mKP-cVzkr9jGm0yvvZllgMRO0SREKInsSXgJSOVMnUj5ZRNry3QIiQAHOMCu5BkKSvogKPa1Xs4nRQ1u4bz4WHy_56bO88BFJjAGAHLP","expires_in":7200}
+2017-11-07 19:20:56.769 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.service.invoice.InvoiceService - jsonObject:{"errcode":0,"ticket":"IpK_1T69hDhZkLQTlwsAX5ZwNp_4txyINLb67lXqTZLu1wnHfVUUtHcdEyG5_WoqaHyMZAIs8Y28ypHDa0iuvg","errmsg":"ok","expires_in":7200}
+2017-11-07 19:20:56.769 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.util.AuthHelper - apiTicket:IpK_1T69hDhZkLQTlwsAX5ZwNp_4txyINLb67lXqTZLu1wnHfVUUtHcdEyG5_WoqaHyMZAIs8Y28ypHDa0iuvg
+2017-11-07 19:20:56.770 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.util.AuthHelper - appId:wxa0064ea657f80062
+2017-11-07 19:20:56.770 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.util.AuthHelper - timeStamp:1510053656
+2017-11-07 19:20:56.770 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.util.AuthHelper - nonceStr:3df23838-f53e-4ffe-a931-462bb4f3bf98
+2017-11-07 19:20:56.770 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.util.AuthHelper - cardType:INVOICE
+2017-11-07 19:20:56.770 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.util.AuthHelper - cardSign:8d2641503c43094384dd9e4cf83d9028a02d10e1
+2017-11-07 19:20:56.770 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.util.AuthHelper - signType:SHA1
+2017-11-07 19:20:56.770 [http-apr-8080-exec-9] INFO  com.ray.weixin.gz.util.AuthHelper - configValue:{"signType":"SHA1","cardSign":"8d2641503c43094384dd9e4cf83d9028a02d10e1","nonceStr":"3df23838-f53e-4ffe-a931-462bb4f3bf98","timestamp":"1510053656"}

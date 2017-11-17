@@ -1,0 +1,2 @@
+2017-11-17 10:17:35.469 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"zKe1jEJDQ0_btOnKMibPWARBFDY95wJny6jyv2QvPiAT9YbdX1G99sE5EngOMgJBiWITzoCQJIoD7-XsJJfh-TzagfqMqxTWrdiNu25sRGsUYHeABACGP","expires_in":7200}
+2017-11-17 10:17:35.704 [main] INFO  com.ray.weixin.gz.service.custom.CustomService - jsonObject:{"kf_list":[{"kf_account":"test1@saofapiao","kf_nick":"客服1","kf_id":2001,"kf_headimgurl":""}]}

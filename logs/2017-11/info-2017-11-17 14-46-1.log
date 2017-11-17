@@ -1,0 +1,6 @@
+2017-11-17 14:46:12.798 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"1oSWHVafZfgyunxCQHjPivKwIM4b-OCGIK-pdkxz16GZHdg2xeQdi-alzkq8aUXsiagsVZKy72tTbRLW5txlN0wFH81gNZF4GHDneVw2WMgomco_HDZULGui-lQlj0nWRBQbAGAXHW","expires_in":7200}
+2017-11-17 14:46:13.436 [main] INFO  com.ray.weixin.gz.service.custom.CustomService - jsonObject:{"errcode":0,"errmsg":"ok"}
+2017-11-17 14:46:13.436 [main] INFO  com.ray.weixin.gz.service.custom.CustomService - 成功邀请绑定客服帐号
+2017-11-17 14:46:34.666 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"KmLPLiXpfoearETOeE2TEIQmp69o24ozWtpOZZ9AHGlUyru8d9W_HgYPHxWlFD8fhA3eHYAW6lyVj1RknUNCzojK5HhBAABCO3CfFFIrKx09H3wfNNi_bHm59wpiv4P9IZWiAIAYPM","expires_in":7200}
+2017-11-17 14:46:35.023 [main] INFO  com.ray.weixin.gz.service.custom.CustomService - JsonObject:{"errcode":0,"errmsg":"ok"}
+2017-11-17 14:46:35.023 [main] INFO  com.ray.weixin.gz.service.custom.CustomService - 客服头像上传成功！

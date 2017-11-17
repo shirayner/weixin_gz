@@ -1,11 +1,11 @@
 package com.ray.weixin.gz.model.message.response;  
   
-/** 
- * 图文model 
- *  
- * @author liufeng 
- * @date 2013-05-19 
- */  
+/**
+ * @desc  :  图文model 
+ * 
+ * @author: shirayner
+ * @date  : 2017年11月13日 上午11:15:30
+ */
 public class Article {  
     // 图文消息名称  
     private String Title;  

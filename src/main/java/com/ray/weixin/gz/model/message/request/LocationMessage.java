@@ -1,11 +1,11 @@
 package com.ray.weixin.gz.model.message.request;  
   
-/** 
- * 地理位置消息 
- *  
- * @author liufeng 
- * @date 2013-05-19 
- */  
+/**
+ * @desc  : 地理位置消息 
+ * 
+ * @author: shirayner
+ * @date  : 2017年11月13日 上午11:07:39
+ */
 public class LocationMessage extends BaseMessage {  
     // 地理位置维度  
     private String Location_X;  

@@ -1,0 +1,15 @@
+2017-11-17 15:30:53.487 [http-apr-8080-exec-8] INFO  com.ray.weixin.gz.controller.WeiXinServlet - post--------------
+2017-11-17 15:30:53.494 [http-apr-8080-exec-8] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - parms:{"signature":["bfc48484be314a9ede74f3c790157364fb9fcc21"],"timestamp":["1510903851"],"nonce":["140705920"],"openid":["o1M7_1YPJI9YMaHiP54wN8nzuoDE"],"encrypt_type":["aes"],"msg_signature":["294996e1bda629942a55c1a11ccf9b51207940fe"]}
+2017-11-17 15:30:53.495 [http-apr-8080-exec-8] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - postData:<xml>    <ToUserName><![CDATA[gh_8903be978f8b]]></ToUserName>    <Encrypt><![CDATA[FeM92V/x9apPqzH/KgNgRHV/B4qflBz/h/x+F/qDGkuobAZbq446Kk3kDDvA8nZ9yMwTM8cKUpjqP2KXUkp6x8wEVwJMqZ0PwHJ2IJfSJV4bqXn2CNUu5ptWATXt1pGPdNOZPKBBPOt+Ke/xGU5e4AUW2e7gtsXaon83nFdNDtYl1BNICootjoLyUpxoH3jErI/k+ISr0jsxfeXCtu0ZUBm+NV0pZ5YXfoi2VWB2LzK8iktkagu/ihLqEJjELQ7nsmNIUHhlzvRrq3lK1K2T5LfmTq8m4yyClinKXWaZe4/fPjw+S5APkgFQLwb+WDdCWpn536bUcKCAgh0Z8LWEoBOiKW/9PIEkgB4vPI2gQvbYS7cbbAgEaesgrKQTBy8PF8bR04tiCGW9CxBOqTn7NDcy9aEoosPxmiUJ4yb2aWvYx429ki5uEM2aguSP+BaEsZVMrBJXB43P8viH+7k7Wg==]]></Encrypt></xml>
+2017-11-17 15:30:53.496 [http-apr-8080-exec-8] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - 安全模式：消息被加密
+2017-11-17 15:30:53.507 [http-apr-8080-exec-8] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - <xml><ToUserName><![CDATA[gh_8903be978f8b]]></ToUserName>
+<FromUserName><![CDATA[o1M7_1YPJI9YMaHiP54wN8nzuoDE]]></FromUserName>
+<CreateTime>1510903851</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[kf_create_session]]></Event>
+<KfAccount><![CDATA[kf1@handhec]]></KfAccount>
+</xml>
+2017-11-17 15:30:53.510 [http-apr-8080-exec-8] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - fromUserName:o1M7_1YPJI9YMaHiP54wN8nzuoDE
+2017-11-17 15:30:53.511 [http-apr-8080-exec-8] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - toUserName:gh_8903be978f8b
+2017-11-17 15:30:53.511 [http-apr-8080-exec-8] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - msgType:event
+2017-11-17 15:30:53.511 [http-apr-8080-exec-8] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - Event:kf_create_session  eventKey:null

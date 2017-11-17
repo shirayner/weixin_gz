@@ -26,7 +26,10 @@ public class UserServiceTest {
 	@Test
 	public void testGetUserInfo() {
 		try {
-			String openId="oDLefxDvQajibXhSWIWHrkiO1n2o";
+			//String openId="o1M7_1da9bXlZfrXS8LF046FcMHo";  //邢稼霖
+			//String openId="o1M7_1TLByH8H1T7XCIj23Roo5yU";  //徐昭
+			String openId="o1M7_1YPJI9YMaHiP54wN8nzuoDE";  //me
+			
 			String accessToken=AuthHelper.getAccessToken(Env.APP_ID, Env.APP_SECRET);
 
 			JSONObject jsonObject=UserService.getUserInfo(accessToken, openId);

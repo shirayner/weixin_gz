@@ -1,0 +1,12 @@
+2017-11-07 15:56:26.623 [http-apr-8080-exec-16] INFO  com.ray.weixin.gz.controller.WeiXinServlet - post--------------
+2017-11-07 15:56:26.636 [http-apr-8080-exec-16] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - parms:{"signature":["44309192494cf1f7103a8d22ea68eb59be4d116c"],"timestamp":["1510041386"],"nonce":["222848774"],"openid":["oDLefxKQlVJ9akmzOMXbCduyUA9E"]}
+2017-11-07 15:56:26.636 [http-apr-8080-exec-16] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - postData:<xml><ToUserName><![CDATA[gh_8c1dd328db4e]]></ToUserName><FromUserName><![CDATA[oDLefxKQlVJ9akmzOMXbCduyUA9E]]></FromUserName><CreateTime>1510041386</CreateTime><MsgType><![CDATA[event]]></MsgType><Event><![CDATA[card_pass_check]]></Event><CardId><![CDATA[pDLefxG5ZPv-uzSySh7hwAX6JfoY]]></CardId><RefuseReason><![CDATA[]]></RefuseReason></xml>
+2017-11-07 15:56:26.637 [http-apr-8080-exec-16] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - 明文模式
+2017-11-07 15:56:26.637 [http-apr-8080-exec-16] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - <xml><ToUserName><![CDATA[gh_8c1dd328db4e]]></ToUserName><FromUserName><![CDATA[oDLefxKQlVJ9akmzOMXbCduyUA9E]]></FromUserName><CreateTime>1510041386</CreateTime><MsgType><![CDATA[event]]></MsgType><Event><![CDATA[card_pass_check]]></Event><CardId><![CDATA[pDLefxG5ZPv-uzSySh7hwAX6JfoY]]></CardId><RefuseReason><![CDATA[]]></RefuseReason></xml>
+2017-11-07 15:56:26.641 [http-apr-8080-exec-16] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - fromUserName:oDLefxKQlVJ9akmzOMXbCduyUA9E
+2017-11-07 15:56:26.642 [http-apr-8080-exec-16] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - toUserName:gh_8c1dd328db4e
+2017-11-07 15:56:26.642 [http-apr-8080-exec-16] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - msgType:event
+2017-11-07 15:56:26.643 [http-apr-8080-exec-16] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - Event:card_pass_check  eventKey:null
+2017-11-07 15:56:26.644 [main] INFO  com.ray.weixin.gz.service.invoice.InvoiceService - jsonObject:{"errcode":0,"errmsg":"ok","card_id":"pDLefxG5ZPv-uzSySh7hwAX6JfoY"}
+2017-11-07 15:56:26.644 [main] INFO  com.ray.weixin.gz.service.invoice.InvoiceService - cardId:pDLefxG5ZPv-uzSySh7hwAX6JfoY
+2017-11-07 15:56:26.645 [main] INFO  com.ray.weixin.gz.service.invoice.InvoiceServiceTest - cardId:pDLefxG5ZPv-uzSySh7hwAX6JfoY

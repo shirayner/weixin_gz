@@ -2,6 +2,7 @@ package com.ray.weixin.gz.service.invoice;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -9,9 +10,13 @@ import org.junit.Test;
 
 import com.alibaba.fastjson.JSONObject;
 import com.ray.weixin.gz.config.Env;
-import com.ray.weixin.gz.model.invoice.BaseInvoice;
-import com.ray.weixin.gz.model.invoice.Invoice;
-import com.ray.weixin.gz.model.invoice.InvoiceInfo;
+import com.ray.weixin.gz.model.invoice.CardExt;
+import com.ray.weixin.gz.model.invoice.InvoiceUserData;
+import com.ray.weixin.gz.model.invoice.UserCard;
+import com.ray.weixin.gz.model.invoice.template.BaseInvoice;
+import com.ray.weixin.gz.model.invoice.template.Invoice;
+import com.ray.weixin.gz.model.invoice.template.InvoiceInfo;
+import com.ray.weixin.gz.service.tempmaterial.TempMaterialService;
 import com.ray.weixin.gz.util.AuthHelper;
 
 /**@desc  : 微信电子发票接口
@@ -85,7 +90,7 @@ public class InvoiceServiceTest {
 		
 		String cardId=InvoiceService.createInvoiceTemplate(accessToken, invoice);
 	
-		logger.info("cardId:"+cardId);
+		logger.info("cardId:"+cardId);  //cardId=pDLefxG5ZPv-uzSySh7hwAX6JfoY
 		
 		
 	}
@@ -153,10 +158,69 @@ public class InvoiceServiceTest {
 		String authUrl=InvoiceService.getAuthPageLink(accessToken, postData);
 		
 		logger.info("authUrl:"+authUrl);
-		
-		
 	}
 	
+	/**
+	 * @throws Exception 
+	 * @desc ：8.上传pdf
+	 *   
+	 *   void
+	 */
+	@Test
+	public void testUploadPDF() throws Exception {
+		String  accessToken=AuthHelper.getAccessToken(Env.APP_ID, Env.APP_SECRET);
+		String  fileDir="D:/fp762.pdf";  //bdARqt5NClDYbP_og5NwBRwO4sCIIwF1ZeVQQKTvB1bkn2rL9Yq52Y6S656lTxf1
+
+		InvoiceService.uploadPDF(accessToken, fileDir);
+	}
+	
+	/**
+	 * @desc ：9.将电子发票卡券插入用户卡包
+	 *  
+	 * @throws Exception 
+	 *   void
+	 */
+	@Test
+	public void testInsertInvoice() throws Exception {
+		//1.获取accessToken
+		String accessToken=AuthHelper.getAccessToken(Env.APP_ID, Env.APP_SECRET);
+		
+		//2.准备好发票具体内容
+		//2.1
+		int billing_time=(int)System.currentTimeMillis() / 1000;  
+		
+		InvoiceUserData invoice_user_data=new InvoiceUserData();
+		invoice_user_data.setFee(4);
+		invoice_user_data.setTitle("上海百度公司");
+		invoice_user_data.setBilling_time(billing_time);
+		invoice_user_data.setBilling_no("847574");
+		invoice_user_data.setBilling_code("437463");
+		invoice_user_data.setFee_without_tax(3);
+		invoice_user_data.setTax(1);
+		invoice_user_data.setS_pdf_media_id(""); //
+		invoice_user_data.setCheck_code("123456");
+		
+		
+		//2.2准备好用户信息结构体——UserCard
+		UserCard user_card=new UserCard();
+		user_card.setInvoice_user_data(invoice_user_data);
+		
+		//2.3 准备好发票具体内容——CardExt
+		String nonce_str=UUID.randomUUID().toString();
+		CardExt card_ext=new CardExt();
+		card_ext.setNonce_str(nonce_str);
+		card_ext.setUser_card(user_card);
+		
+		//3..准备好JSON请求参数
+		JSONObject postData=new JSONObject();
+		postData.put("order_id", "1234");  //获取授权页的时候设置的，GetAuthPageLink
+		postData.put("card_id", "pDLefxG5ZPv-uzSySh7hwAX6JfoY");  //创建发票卡券模板生成的card_id将在创建发票卡券时被引用
+		postData.put("appid", Env.APP_ID);
+		postData.put("card_ext", card_ext);
+		
+		InvoiceService.insertInvoice(accessToken, postData);
+		
+	}
 	
 
 	

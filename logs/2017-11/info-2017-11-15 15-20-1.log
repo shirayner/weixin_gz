@@ -1,0 +1,36 @@
+2017-11-15 15:20:06.033 [http-apr-8080-exec-8] INFO  com.ray.weixin.gz.controller.WeiXinServlet - post--------------
+2017-11-15 15:20:06.045 [http-apr-8080-exec-8] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - parms:{"signature":["fb5cd47ba4aaa3f18d8f45e464896c408220d16b"],"timestamp":["1510730404"],"nonce":["252424634"],"openid":["o1M7_1TLByH8H1T7XCIj23Roo5yU"],"encrypt_type":["aes"],"msg_signature":["8f2499885403890c9d4bff747337a8bf224cdac2"]}
+2017-11-15 15:20:06.045 [http-apr-8080-exec-8] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - postData:<xml>    <ToUserName><![CDATA[gh_8903be978f8b]]></ToUserName>    <Encrypt><![CDATA[PEEI80gd0XSNW6Jdel98Rx6XvJV9WG1ihYA34+6Ll8+Y5ALOBjS03xiu2qowSDBCbHgufzVOVxM7Qp2pHEXNUO6ykOGV+pIffApP+u1CcbHF5MQU9Y2om9EpDCzcGnfWnmj+Wlwsow24jPmA6V9a9Br83SJoc8kE32Ik4ZB3AYuFdfwPJN80hBizSVhJZrsjjFgdjjpZKc8hC6xaqjSQxcayxPKxhZ/trictOQ3ovn9xdUJTmj7hhX8WN1f7nagc3yTSTZMLhkqnE1xC0OjTzZkThhwQGGZ7H2mjqiNhtjdVpOWkGW4v20+Q1WBGtr76Epdy791bfqc139iuacGNvOkwUj2hGbT+HoWQnQ/kCUxmgWvKXO6HEJrtAQLQTq49YFvL8v+Cv54OAM8N08sVhuhXCgMSmGBmPVsW8IW8XEGIo7J66K3silrrS9dAtnpIH88HjFdWGJUXFExnqUR27Kuur+3HdMV41FGX2J/TxfT40hNuoIY3TzunIUc6DIXDbh024MwCAKyWLan2rO/GKVZ/S6XXUy1HzJTdZvR45IM=]]></Encrypt></xml>
+2017-11-15 15:20:06.048 [http-apr-8080-exec-8] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - 安全模式：消息被加密
+2017-11-15 15:20:06.053 [http-apr-8080-exec-8] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - <xml><ToUserName><![CDATA[gh_8903be978f8b]]></ToUserName>
+<FromUserName><![CDATA[o1M7_1TLByH8H1T7XCIj23Roo5yU]]></FromUserName>
+<CreateTime>1510730404</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://rayner.nat300.top/weixin_gz/showInvoice.jsp]]></EventKey>
+<MenuId>450181554</MenuId>
+</xml>
+2017-11-15 15:20:06.060 [http-apr-8080-exec-8] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - fromUserName:o1M7_1TLByH8H1T7XCIj23Roo5yU
+2017-11-15 15:20:06.060 [http-apr-8080-exec-8] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - toUserName:gh_8903be978f8b
+2017-11-15 15:20:06.060 [http-apr-8080-exec-8] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - msgType:event
+2017-11-15 15:20:06.061 [http-apr-8080-exec-8] INFO  com.ray.weixin.gz.service.message.ReplyMessageService - Event:VIEW  eventKey:http://rayner.nat300.top/weixin_gz/showInvoice.jsp
+2017-11-15 15:20:06.182 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"ZKkGfaiAVKLF7KqGMcd9ySM5CNyJEcdc5rHxL-wLu5fCuwQYtcl87pYQdpZm_WhGUOCq-fCSK6m1ZwwsAQEBhGibSfspVI_Gntj9oeLfhT4BQMfADAJYU","expires_in":7200}
+2017-11-15 15:20:06.286 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"errcode":0,"ticket":"HoagFKDcsGMVCIY2vOjf9mrEXbwXSbqpUm0898_LsZhfWowrJV-9wOxwAgoPTOhdqfiAJVBhU9J6pQbGq-WKag","errmsg":"ok","expires_in":7200}
+2017-11-15 15:20:06.286 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.util.AuthHelper - accessToken:ZKkGfaiAVKLF7KqGMcd9ySM5CNyJEcdc5rHxL-wLu5fCuwQYtcl87pYQdpZm_WhGUOCq-fCSK6m1ZwwsAQEBhGibSfspVI_Gntj9oeLfhT4BQMfADAJYU
+2017-11-15 15:20:06.286 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.util.AuthHelper - ticket:HoagFKDcsGMVCIY2vOjf9mrEXbwXSbqpUm0898_LsZhfWowrJV-9wOxwAgoPTOhdqfiAJVBhU9J6pQbGq-WKag
+2017-11-15 15:20:06.287 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.util.AuthHelper - nonceStr:f2575ca7-d1c9-4653-8851-30de161de8da
+2017-11-15 15:20:06.287 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.util.AuthHelper - timeStamp:1510730406
+2017-11-15 15:20:06.287 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.util.AuthHelper - signedUrl:http://rayner.nat300.top/weixin_gz/showInvoice.jsp
+2017-11-15 15:20:06.287 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.util.AuthHelper - signature:45aff61c089b253fef6cd328a91e1822441cf25c
+2017-11-15 15:20:06.287 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.util.AuthHelper - appId:wx07c4d9d0895fe212
+2017-11-15 15:20:06.287 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.util.AuthHelper - configValue:{signature:'45aff61c089b253fef6cd328a91e1822441cf25c',nonceStr:'f2575ca7-d1c9-4653-8851-30de161de8da',timeStamp:'1510730406',appId:'wx07c4d9d0895fe212'}
+2017-11-15 15:20:06.423 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"ZKkGfaiAVKLF7KqGMcd9ySM5CNyJEcdc5rHxL-wLu5deCV5l9_IG1FQpTmVovDBvTjuSKf3IuGVVnC32b1p-hHboH47YDjm4kFA2ams0soMVFZfADAAKE","expires_in":7200}
+2017-11-15 15:20:06.520 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.service.invoice.InvoiceService - jsonObject:{"errcode":0,"ticket":"9KwiourQPRN3vx3Nn1c_iXCh-5F7rD5UiR6FRkNziS3cx4b8Yjpce58MCsslS5Cu43H8pvgbGMFfDvtxfdImxg","errmsg":"ok","expires_in":7200}
+2017-11-15 15:20:06.520 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.util.AuthHelper - apiTicket:9KwiourQPRN3vx3Nn1c_iXCh-5F7rD5UiR6FRkNziS3cx4b8Yjpce58MCsslS5Cu43H8pvgbGMFfDvtxfdImxg
+2017-11-15 15:20:06.520 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.util.AuthHelper - appId:wx07c4d9d0895fe212
+2017-11-15 15:20:06.520 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.util.AuthHelper - timeStamp:1510730406
+2017-11-15 15:20:06.520 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.util.AuthHelper - nonceStr:2b29e26d-81a6-4911-a09c-d2fc48f1fcf9
+2017-11-15 15:20:06.520 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.util.AuthHelper - cardType:INVOICE
+2017-11-15 15:20:06.520 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.util.AuthHelper - cardSign:075a955ab46b1224108c71dcd12eb20b87ff7f2e
+2017-11-15 15:20:06.520 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.util.AuthHelper - signType:SHA1
+2017-11-15 15:20:06.521 [http-apr-8080-exec-2] INFO  com.ray.weixin.gz.util.AuthHelper - configValue:{"signType":"SHA1","cardSign":"075a955ab46b1224108c71dcd12eb20b87ff7f2e","nonceStr":"2b29e26d-81a6-4911-a09c-d2fc48f1fcf9","timestamp":"1510730406"}

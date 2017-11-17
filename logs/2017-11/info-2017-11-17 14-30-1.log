@@ -1,0 +1,3 @@
+2017-11-17 14:30:41.308 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"Eh7QVpi5rHBJGeRVtrd9c3h5Yi_LcHaUC9UIEdXGUNUyJdIT75SE7Pk2dwSEZ3F3caLcDwGZ8Q5dC4CTgxytjz5KkiUbFhhtrlilBUpYGIVuR446VzmASBQoiWlpE3CNJUVjAJAUFG","expires_in":7200}
+2017-11-17 14:30:41.768 [main] INFO  com.ray.weixin.gz.service.custom.CustomService - JsonObject:{"errcode":0,"errmsg":"ok"}
+2017-11-17 14:30:41.769 [main] INFO  com.ray.weixin.gz.service.custom.CustomService - 客服头像上传成功！

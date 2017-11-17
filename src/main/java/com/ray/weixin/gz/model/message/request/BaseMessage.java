@@ -1,11 +1,11 @@
 package com.ray.weixin.gz.model.message.request;  
   
-/** 
- * 消息基类（普通用户 -> 公众帐号） 
- *  
- * @author liufeng 
- * @date 2013-05-19 
- */  
+/**
+ *   @desc  : 消息基类（普通用户 -> 公众帐号） 
+ * 
+ * @author: shirayner
+ * @date  : 2017年11月13日 上午10:58:08
+ */
 public class BaseMessage {  
     // 开发者微信号  
     private String ToUserName;  

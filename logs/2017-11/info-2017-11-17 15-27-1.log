@@ -1,0 +1,16 @@
+2017-11-17 15:27:26.136 [http-apr-8080-exec-3] INFO  com.ray.weixin.gz.controller.WeiXinServlet - post--------------
+2017-11-17 15:27:26.150 [http-apr-8080-exec-3] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - parms:{"signature":["f1f2546429a401d0707bc339c121a7d58dc0640e"],"timestamp":["1510903644"],"nonce":["634308686"],"openid":["o1M7_1da9bXlZfrXS8LF046FcMHo"],"encrypt_type":["aes"],"msg_signature":["d5fab71a6a5e8da1e9134cf37b757882c7ed8a1d"]}
+2017-11-17 15:27:26.151 [http-apr-8080-exec-3] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - postData:<xml>    <ToUserName><![CDATA[gh_8903be978f8b]]></ToUserName>    <Encrypt><![CDATA[PRw5ZuQnswHp58iq0qjxgU9rTwQfxiTyuJhz2NVCFPiJg6/P3aRV1uR7s/z6woNIdIDzN5LnLhaZYTU5H6EFN1YjItVqk9jmQuRoMwBR7WgEB7JfxGebvSGuiCcVjYWq6NyNOQaPSgrRIaChGu+DnzFmfV/vanTc0Nx+WiPwq5NNitwk18Ug4NUrlgJpa2P7XP1b2A2S4E+SmUsbffZCiVt/viBEQ/CXiqQW38wj6VC/oz6+RWTAfkRL3Y+c6oe0LaNFH6SmqUeUI81VnyEtBIDST2GAxww/oF7ZNeeYiPSlzNRJp7YPtRqnHFTezgKVnaRz0yfelveR02ROB5Iui/hUfgM8zYnc1xusDbjLs4c4YlLLOBzqkASMme2eGFVlNnzmI0g6uwxAG8mPdMr7NZW9pI3Y6c+P3RSm86YohX0YO1K5oPPBF1DbHzLjdZxwUKEKF7P8Osjoe719jefnitotrdo4g0j3HLRxPOp19IJ2tAa8ir/s666YhrlUFpHISEptla3NeS3UVzKmTzSnkrh9hR3mf7qgv4ryAl5ytoY=]]></Encrypt></xml>
+2017-11-17 15:27:26.153 [http-apr-8080-exec-3] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - 安全模式：消息被加密
+2017-11-17 15:27:26.156 [http-apr-8080-exec-3] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - <xml><ToUserName><![CDATA[gh_8903be978f8b]]></ToUserName>
+<FromUserName><![CDATA[o1M7_1da9bXlZfrXS8LF046FcMHo]]></FromUserName>
+<CreateTime>1510903644</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://rayner.nat300.top/weixin_gz/weixingz_show_invoiceInfo.screen]]></EventKey>
+<MenuId>450199863</MenuId>
+</xml>
+2017-11-17 15:27:26.159 [http-apr-8080-exec-3] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - fromUserName:o1M7_1da9bXlZfrXS8LF046FcMHo
+2017-11-17 15:27:26.160 [http-apr-8080-exec-3] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - toUserName:gh_8903be978f8b
+2017-11-17 15:27:26.160 [http-apr-8080-exec-3] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - msgType:event
+2017-11-17 15:27:26.160 [http-apr-8080-exec-3] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - Event:VIEW  eventKey:http://rayner.nat300.top/weixin_gz/weixingz_show_invoiceInfo.screen

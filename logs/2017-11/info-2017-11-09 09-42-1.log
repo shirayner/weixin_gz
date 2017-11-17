@@ -1,0 +1,10 @@
+2017-11-09 09:42:40.527 [http-apr-8080-exec-4] INFO  com.ray.weixin.qy.util.AuthHelper - jsonObject:{"errcode":0,"access_token":"RVUMhaz-QcALWPrIef8VlQayDM5w55oYDw5FrLAax9W4TOLAOXTnChxYEP2-74uxxPT2C9i1I9wewB97GuODOPyN3p7to4_wYWQ3cAQMv-owZeVpxS-gopdSUPHtRFsxqx5m0RnpBhh0BI0DFiUS85FISGwMzmvNvPe6ZvlKrM54gETQx1ZRdVGQSMHVYFzqZBb9C7q_gw-eZZ9u8Kqw4A","errmsg":"ok","expires_in":7200}
+2017-11-09 09:42:41.061 [http-apr-8080-exec-4] INFO  com.ray.weixin.qy.util.AuthHelper - jsonObject:{"errcode":0,"ticket":"kgt8ON7yVITDhtdwci0qebCLEfC_BfeygIq8cFPLbdbVIB76UKmHNQSOygZvd-Z1ed9TEYoCChiRyMVxpC9-UQ","errmsg":"ok","expires_in":7200}
+2017-11-09 09:42:41.062 [http-apr-8080-exec-4] INFO  com.ray.weixin.qy.util.AuthHelper - url:http://localhost:8080/weixin_qy/showInvoice.jsp
+2017-11-09 09:42:41.062 [http-apr-8080-exec-4] INFO  com.ray.weixin.qy.util.AuthHelper - accessToken:RVUMhaz-QcALWPrIef8VlQayDM5w55oYDw5FrLAax9W4TOLAOXTnChxYEP2-74uxxPT2C9i1I9wewB97GuODOPyN3p7to4_wYWQ3cAQMv-owZeVpxS-gopdSUPHtRFsxqx5m0RnpBhh0BI0DFiUS85FISGwMzmvNvPe6ZvlKrM54gETQx1ZRdVGQSMHVYFzqZBb9C7q_gw-eZZ9u8Kqw4A
+2017-11-09 09:42:41.062 [http-apr-8080-exec-4] INFO  com.ray.weixin.qy.util.AuthHelper - jsapi_ticket:kgt8ON7yVITDhtdwci0qebCLEfC_BfeygIq8cFPLbdbVIB76UKmHNQSOygZvd-Z1ed9TEYoCChiRyMVxpC9-UQ
+2017-11-09 09:42:41.063 [http-apr-8080-exec-4] INFO  com.ray.weixin.qy.util.AuthHelper - appId:ww92f5da92bb24696e
+2017-11-09 09:42:41.063 [http-apr-8080-exec-4] INFO  com.ray.weixin.qy.util.AuthHelper - timestamp:1510191758
+2017-11-09 09:42:41.063 [http-apr-8080-exec-4] INFO  com.ray.weixin.qy.util.AuthHelper - nonceStr:98e9aac7-de6a-46ab-9067-b50ee3ff2816
+2017-11-09 09:42:41.063 [http-apr-8080-exec-4] INFO  com.ray.weixin.qy.util.AuthHelper - signature:4fe3887ed3d8d20f75f21eedf706d848ea7886ab
+2017-11-09 09:42:41.063 [http-apr-8080-exec-4] INFO  com.ray.weixin.qy.util.AuthHelper - configValue:{"signature":"4fe3887ed3d8d20f75f21eedf706d848ea7886ab","appId":"ww92f5da92bb24696e","nonceStr":"98e9aac7-de6a-46ab-9067-b50ee3ff2816","timestamp":"1510191758"}

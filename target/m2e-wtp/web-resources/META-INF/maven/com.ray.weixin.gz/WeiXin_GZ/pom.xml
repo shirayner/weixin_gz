@@ -2,9 +2,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ray.weixin.gz</groupId>
-	<artifactId>WeiXin_GZ</artifactId>
+	<artifactId>weixin_gz</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
+    <name>weixin_gz</name>
+  <description>微信公众平台</description>
+
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

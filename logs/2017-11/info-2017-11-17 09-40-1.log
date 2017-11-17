@@ -1,0 +1,4 @@
+2017-11-17 09:40:23.026 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"7kacPwOFHafBfVG6hwCqtIGC3kdk7PMsQdZpx_q1Mv5E8CymuMqO8UzxOutI4kVMN8z5BHh-XN8-r5TsECrTXuGyCN2uzGhA5yOQkLpWsFgi1j_u2GF_p2vmG2sK8VlqTSZaAAAYXE","expires_in":7200}
+2017-11-17 09:40:23.043 [main] INFO  com.ray.weixin.gz.service.message.CustomMessageService - {"kf_account":"test1@saofapiao","nickname":"客服1"}
+2017-11-17 09:40:23.186 [main] INFO  com.ray.weixin.gz.service.message.CustomMessageService - jsonObject:{"errcode":0,"errmsg":"ok"}
+2017-11-17 09:40:23.186 [main] INFO  com.ray.weixin.gz.service.message.CustomMessageService - 客服添加成功！

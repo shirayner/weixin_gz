@@ -1,11 +1,11 @@
 package com.ray.weixin.gz.model.message.request;  
   
-/** 
- * 链接消息 
- *  
- * @author liufeng 
- * @date 2013-05-19 
- */  
+/**
+ * @desc  :链接消息  
+ * 
+ * @author: shirayner
+ * @date  : 2017年11月13日 上午11:05:46
+ */
 public class LinkMessage extends BaseMessage {  
     // 消息标题  
     private String Title;  

@@ -1,0 +1,3 @@
+2017-11-17 16:10:16.595 [main] INFO  com.ray.weixin.gz.util.AuthHelper - jsonObject:{"access_token":"_46n6WRAwhaLKtow_EH6yQGazNHxgn9lMIWmaR4aldZOwcTBbTfb9qyDkL57pp1A3kJwPM1iKX_OT1OXiPRqJaQ--oSSiOnj7Pd-yIOk303FGViL8kBa7uNCRwpGRfVcLUTgAAAQZY","expires_in":7200}
+2017-11-17 16:10:16.817 [main] INFO  com.ray.weixin.gz.service.message.cutom.CustomMessageService - jsonObject:{"errcode":0,"errmsg":"ok"}
+2017-11-17 16:10:16.817 [main] INFO  com.ray.weixin.gz.service.message.cutom.CustomMessageService - 创建会话成功！

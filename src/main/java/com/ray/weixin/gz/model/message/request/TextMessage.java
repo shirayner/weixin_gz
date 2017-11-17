@@ -1,11 +1,11 @@
 package com.ray.weixin.gz.model.message.request;  
   
-/** 
- * 文本消息 
- *  
- * @author liufeng 
- * @date 2013-05-19 
- */  
+/**
+ * @desc  : 文本消息 
+ * 
+ * @author: shirayner
+ * @date  : 2017年11月13日 上午11:04:09
+ */
 public class TextMessage extends BaseMessage {  
     // 消息内容  
     private String Content;  

@@ -1,11 +1,11 @@
 package com.ray.weixin.gz.model.message.request;  
-  
-/** 
- * 音频消息 
- *  
- * @author liufeng 
- * @date 2013-05-19 
- */  
+    
+/**
+ * @desc  :音频消息  
+ * 
+ * @author: shirayner
+ * @date  : 2017年11月13日 上午11:08:25
+ */
 public class VoiceMessage extends BaseMessage {  
     // 媒体ID  
     private String MediaId;  

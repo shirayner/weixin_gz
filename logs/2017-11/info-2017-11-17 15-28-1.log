@@ -1,0 +1,15 @@
+2017-11-17 15:28:09.616 [http-apr-8080-exec-7] INFO  com.ray.weixin.gz.controller.WeiXinServlet - post--------------
+2017-11-17 15:28:09.627 [http-apr-8080-exec-7] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - parms:{"signature":["1477e2c9241f4880de21459752d47a2d0a22e1b6"],"timestamp":["1510903688"],"nonce":["413898819"],"openid":["o1M7_1YPJI9YMaHiP54wN8nzuoDE"],"encrypt_type":["aes"],"msg_signature":["8f29ebda8a61903f315d9bf9655fa463b59e1659"]}
+2017-11-17 15:28:09.627 [http-apr-8080-exec-7] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - postData:<xml>    <ToUserName><![CDATA[gh_8903be978f8b]]></ToUserName>    <Encrypt><![CDATA[2/yQxPiyL7NTv+5Tpe9DfhLMjtG/tz4/KS4WQQ9lftJCIyDv4GrNO4B76xw0ORxpGuuNSeP8n8gRR8OK2r2Rmfdwhq/W9z/rTJBM3hHaclo8mJa7m/tRaaJaXkHQVzhtwmw/uVPLZ9yzdSOi/1GDYgiXmfROIZ+R4exP9z0+NAnbOpc0sIi2c13xvrabBmAcWicfAOZ7QYYyul8/3zPayVdBje36y3zQHlH40WhXWQjHBScQg3u92dq6qUqWz/VFAWVtnXY6bnQxk96vpEkPg0L8PrtSkpx0r4TiifknKOnpuG0h406VTudyPDjf5isKWeJUKnEeOeB1RGQ5fwL9T0QlDGpSh4jhgwP7wVnGh++rR0JIkYGMpt1QdIrUmg7mFMUWP2TAKF/4sSZxoS9Ys53cigWfROqJLZpRUxR5DMU=]]></Encrypt></xml>
+2017-11-17 15:28:09.628 [http-apr-8080-exec-7] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - 安全模式：消息被加密
+2017-11-17 15:28:09.631 [http-apr-8080-exec-7] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - <xml><ToUserName><![CDATA[gh_8903be978f8b]]></ToUserName>
+<FromUserName><![CDATA[o1M7_1YPJI9YMaHiP54wN8nzuoDE]]></FromUserName>
+<CreateTime>1510903688</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[…]]></Content>
+<MsgId>6489281927816018279</MsgId>
+</xml>
+2017-11-17 15:28:09.633 [http-apr-8080-exec-7] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - fromUserName:o1M7_1YPJI9YMaHiP54wN8nzuoDE
+2017-11-17 15:28:09.633 [http-apr-8080-exec-7] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - toUserName:gh_8903be978f8b
+2017-11-17 15:28:09.633 [http-apr-8080-exec-7] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - msgType:text
+2017-11-17 15:28:09.633 [http-apr-8080-exec-7] INFO  com.ray.weixin.gz.service.message.reply.ReplyMessageService - Event:null  eventKey:null

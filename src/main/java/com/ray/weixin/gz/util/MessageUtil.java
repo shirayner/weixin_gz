@@ -14,6 +14,7 @@ import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
 import com.ray.weixin.gz.model.message.response.Article;
+import com.ray.weixin.gz.model.message.response.CustomMessage;
 import com.ray.weixin.gz.model.message.response.NewsMessage;
 import com.ray.weixin.gz.model.message.response.TextMessage;
 import com.thoughtworks.xstream.XStream;  
@@ -36,6 +37,9 @@ public class MessageUtil {
     public static final String RESP_MESSAGE_TYPE_MUSIC = "music";  
     //返回消息类型：图文 
     public static final String RESP_MESSAGE_TYPE_NEWS = "news";
+    //返回消息类型：客服
+    public static final String RESP_MESSAGE_TYPE_CUSTOM = "transfer_customer_service";
+    
     
     //请求消息类型：文本  
     public static final String REQ_MESSAGE_TYPE_TEXT = "text";  
@@ -128,6 +132,16 @@ public class MessageUtil {
         return xstream.toXML(textMessage);  
     }  
   
+    /** 
+     * 3.转发客服消息对象转换成xml 
+     *  
+     * @param textMessage 文本消息对象 
+     * @return xml 
+     */  
+    public static String customMessageToXml(CustomMessage customMessage) {  
+        xstream.alias("xml", customMessage.getClass());  
+        return xstream.toXML(customMessage);  
+    } 
     /** 
      * 音乐消息对象转换成xml 
      *  
